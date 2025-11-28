@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shayussi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 100px; /* space for footer */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  /* Top bar styles */
+  .top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .top-left, .top-right {
+    display: flex;
+    gap: 15px;
+  }
+  .top-left a, .top-right a {
+    text-decoration: none;
+    color: #555;
+  }
+  .top-left a:hover, .top-right a:hover {
+    text-decoration: underline;
+  }
+
+  /* Move the right links slightly to the left (optional) */
+  .top-right {
+    margin-left: -20px; /* adjust as needed */
+  }
+
+  /* Style for the main search container */
+  .main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Logo styles with closer letters */
+  .logo {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -10px; /* closer letters */
+  }
+  .logo span {
+    font-weight: bold;
+  }
+  /* Colors for each letter */
+  .blue { color: #4285F4; }
+  .red { color: #DB4437; }
+  .yellow { color: #F4B400; }
+  .green { color: #0F9D58; }
+
+  /* Search box container styling */
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Search input styling */
+  #searchInput {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px 0 0 24px; /* rounded left side */
+    outline: none;
+    width: 500px;
+    max-width: 90%;
+  }
+
+
+  /* Buttons below search */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  #luckyButton, #searchButton {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #luckyButton:hover, #searchButton:hover {
+    border: 1px solid #c6c6c6;
+    background-color: #f1f1f1;
+  }
+
+  /* Footer styles */
+  .footer {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #70757a;
+    background-color: #f2f2f2;
+    padding: 14px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  .footer-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .footer-country {
+    margin-bottom: 10px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+  }
+  .footer-left, .footer-right {
+    display: flex;
+    gap: 15px;
+  }
+  .footer a {
+    color: #70757a;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Navigation Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <a href="#" onclick="window.location.href='file:///C:/extras%20for%20shayussi/about.html'; return false;">About</a>
+    <a href="#" onclick="alert('Store'); return false;">Store</a>
+  </div>
+  <div class="top-right" style="margin-left: -20px;">
+    <a href="file:///C:/essmail/v10.html" target="_blank">Essmail</a>
+    <a href="https://www.google.com/search?safe=active&sca_esv=ef6e102d6c74609c&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ59Aj-dkSgmXWKpa2HWaBZDtyvvIn4PVHl081BMOU6ho1DagsDtH7EhU_jONOpA_v35jDU369U1pEMbQeLcPxqmMv1Psj21q-Yd4ODt3PDKYXo_yRUXVPkWTNfLTZXIWAlDx6AOsX1uPEbCDgn-VxmR6QkuqiXA0BZ3o2D1lgYKQfBoDh3nEZg_6Aa8V38P259_ynqg&q=roast+chicken&sa=X&ved=2ahUKEwi9p7eUi5CRAxXLSkEAHYpMNjYQtKgLegQIFxAB&biw=1699&bih=941&dpr=1.5" target="_blank">Hot Chicks</a>
+    <a href="#" onclick="window.location.href='file:///C:/shayussi_clones/v1clone.html'; return false;">Sign in</a>
+  </div>
+</div>
+
+<!-- Main search section -->
+<div class="main-container">
+  <div class="logo">
+    <span class="blue">S</span>
+    <span class="red">H</span>
+    <span class="yellow">A</span>
+    <span class="blue">Y</span>
+    <span class="green">U</span>
+    <span class="red">S</span>
+    <span class="yellow">S</span>
+    <span class="blue">I</span>
+  </div>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search Shayussy" />
+    <a id="labnolLink" href="https://tineye.com/" target="_blank" style="margin-left: 10px; font-size: 20px; text-decoration: none;">📷</a>
+<script> window.__ow = window.__ow || {}; window.__ow.organizationId = "67610eee-f16a-497a-a044-e43238a842bf"; window.__ow.template_id = "c014701f-ae27-4234-aa41-08c076a260e3"; window.__ow.integration_name = "manual_settings"; window.__ow.product_name = "chatbot"; ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice)) </script> <noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript> <!-- End of ChatBot code -->
+  </div>
+  <div class="button-container">
+    <button id="searchButton" type="button">Shayussy Search</button>
+    <button id="luckyButton" type="button">I'm Feeling Shayussy</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-country">
+      <a href="https://en.wikipedia.org/wiki/Yugoslavia" target="_blank">Yugoslavia</a>
+    </div>
+    <div class="footer-links">
+      <div class="footer-left">
+        <a href="#" onclick="window.location.href='file:///C:/extras%20for%20shayussi/advertisements.html'; return false;">Advertising</a>
+        <a href="#" onclick="window.location.href='file:///C:/extras%20for%20shayussi/business.html'; return false;">Business</a>
+        <a href="#" onclick="window.location.href='file:///C:/extras%20for%20shayussi/how_search_works.html'; return false;">How Search Works</a>
+        <a href="#" onclick="window.location.href='file:///C:/extras%20for%20shayussi/privacy_policy.html'; return false;">Privacy</a>
+      </div>
+      <div class="footer-right">
+        <a href="#" onclick="window.location.href='file:///C:/extras%20for%20shayussi/terms.html'; return false;">Terms</a>
+        <a href="#" onclick="alert('Why are you looking here? This website is perfect.'); return false;">This website is only a parody and is not affiliated with Google.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Function to show alert with message
+function sayPage(msg) {
+  alert("This option doesnt actually exist");
+}
+
+// Feelings URLs data
+const shayussyUrls = {
+  "I'm Feeling Adventurous": [
+    "https://www.tottenhamhotspurstadium.com/f1-drive-london/",
+    "https://www.adventurevalley.co.uk/",
+    "https://skyhighskydiving.co.uk/",
+    "https://www.gadventures.com/",
+    "https://www.explore.org",
+    "https://www.trackdays.co.uk/driving-experience/",
+    "https://www.muchbetteradventures.com/",
+    "https://www.adventuresportsjournal.com",
+    "https://www.theforbiddencorner.co.uk/",
+    "https://www.durhamclimbingcentre.co.uk/"
+  ],
+  "I'm Feeling Hungry": [
+    "https://www.allrecipes.com",
+    "https://www.foodnetwork.com",
+    "https://www.bbcgoodfood.com/recipes",
+    "https://realfood.tesco.com/",
+    "https://www.hairybikers.com/recipes",
+    "https://www.epicurious.com",
+    "https://www.spoonacular.com",
+    "https://www.food.com",
+    "https://www.delish.com",
+    "https://www.cookinglight.com"
+  ],
+  "I'm Feeling Puzzled": [
+    "https://www.jigsawplanet.com",
+    "https://www.puzzlemaker.com",
+    "https://www.riddles.com",
+    "https://www.brainzilla.com",
+    "https://www.mathsisfun.com/puzzles",
+    "https://www.nytimes.com/games/wordle/index.html",
+    "https://www.chess.com",
+    "https://www.coolmath-games.com",
+    "https://www.sudoku.com",
+    "https://writingexercises.co.uk/anagram-game.php"
+  ],
+  "I'm Feeling Trendy": [
+    "https://www.vogue.com",
+    "https://www.nike.com/gb/w/best-shoes-76m50zy7ok",
+    "https://www.next.co.uk/shop/gender-women/feat-newin",
+    "https://www.highsnobiety.com",
+    "https://www.hypebeast.com",
+    "https://f1store.formula1.com/en/?query=clothes&_ref=p-HP:m-SEARCH",
+    "https://uk.puma.com/uk/en/men/shoes/mens-footwear-best-sellers?offset=24",
+    "https://www.adidas.co.uk/trending",
+    "https://www.riverisland.com/c/women/just-arrived",
+    "https://www.thenorthface.com/en-gb"
+  ],
+  "I'm Feeling Artistic": [
+    "https://www.deviantart.com",
+    "https://thebowesmuseum.org.uk/",
+    "https://www.artstation.com",
+    "https://www.saatchiart.com",
+    "https://uk.pinterest.com/",
+    "https://www.designspiration.com",
+    "https://www.britannica.com/list/10-famous-artworks-by-leonardo-da-vinci",
+    "https://origami.guide/",
+    "https://willkempartschool.com/beginning-painting-how-to/",
+    "https://juliabausenhardt.com/how-to-draw-anything-learn-sketching-for-beginners/"
+  ],
+  "I'm Feeling Generous": [
+    "https://www.gofundme.com",
+    "https://www.kiva.org",
+    "https://www.charitynavigator.org",
+    "https://www.donorschoose.org",
+    "https://www.volunteermatch.org",
+    "https://www.globalgiving.org",
+    "https://www.charitywater.org",
+    "https://www.unicef.org",
+    "https://www.wwf.org",
+    "https://www.doctorswithoutborders.org"
+  ],
+  "I'm Feeling Curious": [
+    "https://en.wikipedia.org/wiki/Special:Random",
+    "https://www.ted.com/talks",
+    "https://www.sciencefocus.com/science/fun-facts",
+    "https://www.howstuffworks.com",
+    "https://www.reddit.com/r/todayilearned/",
+    "https://science.nasa.gov/mission/msl-curiosity/",
+    "https://www.smithsonianmag.com",
+    "https://www.newscientist.com",
+    "https://science.nasa.gov/earth/facts/",
+    "https://aviator.indus.travel/fun-facts-about-landmarks-around-the-world/"
+  ],
+  "I'm Feeling Doodley": [
+    "https://sketch.io/sketchpad/",
+    "https://www.autodraw.com",
+    "https://quickdraw.withgoogle.com",
+    "https://doodles.google/",
+    "https://kleki.com",
+    "https://www.piskelapp.com",
+    "https://www.pixilart.com",
+    "https://www.incredibox.com/demo/",
+    "https://www.canva.com/draw/",
+    "https://jspaint.app/#local:2e7a098b43dd88"
+  ],
+  "I'm Feeling Stellar": [
+    "https://www.nasa.gov",
+    "https://www.hubblesite.org",
+    "https://www.space.com",
+    "https://www.esa.int",
+    "https://www.astronomy.com",
+    "https://www.skyandtelescope.org",
+    "https://www.universetoday.com",
+    "https://www.planetary.org",
+    "https://www.spacex.com/",
+    "https://www.livescience.com/space"
+  ],
+  "I'm Feeling Like Throwing Antony Out A Window": [
+    "https://www.antweb.org",
+    "https://www.antscanada.com",
+    "https://en.wikipedia.org/wiki/Ant",
+    "https://www.nationalgeographic.com/animals/invertebrates/group/ants/",
+    "https://www.antkeeper.com",
+    "https://www.antwiki.org",
+    "https://www.antsofafrica.org",
+    "https://www.insectidentification.org/insect-description.php?identification=Ant",
+    "https://www.lomaxwood.co.uk/news/what-are-french-windows-and-doors/",
+    "https://www.britannica.com/animal/ant"
+  ]
+};
+
+// Feeling hover logic
+const feelingPhrases = Object.keys(shayussyUrls);
+const luckyBtn = document.getElementById('luckyButton');
+
+let lastTwoFeelings = [];
+let currentFeeling = feelingPhrases[0];
+let hoverFeeling = null;
+
+function getNewFeeling() {
+  const available = feelingPhrases.filter(f => !lastTwoFeelings.includes(f));
+  if (available.length === 0) {
+    lastTwoFeelings = [];
+    return feelingPhrases[Math.floor(Math.random() * feelingPhrases.length)];
+  }
+  const feeling = available[Math.floor(Math.random() * available.length)];
+  return feeling;
+}
+
+luckyBtn.addEventListener('mouseenter', () => {
+  if (document.getElementById('searchInput').value.trim() !== "") return;
+  hoverFeeling = getNewFeeling();
+  lastTwoFeelings.push(hoverFeeling);
+  if (lastTwoFeelings.length > 2) lastTwoFeelings.shift();
+  luckyBtn.textContent = hoverFeeling;
+});
+
+luckyBtn.addEventListener('mouseleave', () => {
+  luckyBtn.textContent = "I'm Feeling Shayussy";
+});
+
+document.getElementById('luckyButton').addEventListener('click', () => {
+  const q = document.getElementById('searchInput').value.trim();
+  if (q) {
+    window.location.href = `https://www.google.com/search?q=${encodeURIComponent(q)}&btnI=1`;
+  } else {
+    let feeling = hoverFeeling || currentFeeling;
+    if (!feeling || !shayussyUrls[feeling]) feeling = feelingPhrases[0];
+    const urls = shayussyUrls[feeling];
+    const url = urls[Math.floor(Math.random() * urls.length)];
+    window.location.href = url;
+  }
+});
+
+// Updated search button to handle "essmail" or "exit" direct redirect
+document.getElementById('searchButton').addEventListener('click', () => {
+  const q = document.getElementById('searchInput').value.trim();
+  const qLower = q.toLowerCase();
+
+  // Check for "exit" command
+  if (qLower === 'exit') {
+    localStorage.setItem('exit_mode', 'true'); // set persistent flag
+    window.location.href = 'file:///C:/Shayussi/v34.html'; // redirect to main page
+    return;
+  }
+
+  // Check for "essmail" keyword
+  if (qLower.includes('essmail')) {
+    window.location.href = 'file:///C:/essmail/v10.html'; // your essmail page
+  } else if (q) {
+    // clear exit mode if any
+    localStorage.removeItem('exit_mode');
+    // normal google search
+    window.location.href = `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+  }
+});
+
+// On page load, check if "exit" was previously triggered
+(function checkExit() {
+  if (localStorage.getItem('exit_mode') === 'true') {
+    window.location.href = 'file:///C:/Shayussi/v34.html'; // your main page
+  }
+})();
+
+// Optional: handle Enter key for search input
+document.getElementById('searchInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.keyCode === 13) {
+    e.preventDefault();
+    document.getElementById('searchButton').click();
+  }
+});
+</script>
+</body>
+</html>
+
+
